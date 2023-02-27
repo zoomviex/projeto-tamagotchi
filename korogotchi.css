@@ -69,14 +69,16 @@ main{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border: 8px solid rgb(234, 234, 0);
+  border-radius: 10px;
 }
 
 .koro--screen{
-  background-image: url(https://wallpaperaccess.com/full/2536359.png);
+  background-image: url(img/t-child.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
-  border: 10px solid #ee8495;
+  border: 8px solid rgb(234, 234, 0);
   border-radius: 8px;
   height: 80%;
   width: 100%;
@@ -101,7 +103,7 @@ main{
 }
 
 .actions-element{
-  padding: 0 4%;
+  padding: 0 3%;
 }
 
 .actions-element:hover{
