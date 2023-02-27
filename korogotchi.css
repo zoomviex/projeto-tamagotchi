@@ -1,0 +1,106 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+
+}
+
+header{
+  border: 1px solid red;
+  height: 20%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.header--trade {
+  border: 1px solid black;
+  text-align: center;
+}
+
+main{
+  border: 4px solid green;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.koro--status{
+  height: 60%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.koro--status ul{
+  text-align:start;
+  font-size: 24px;
+  display: grid;
+  place-content: center;
+  list-style: none;
+  width: 100%;
+}
+
+.koro--status span{
+  border: solid 1px black;
+  margin-bottom: 15%;
+}
+
+.koro--vice{
+  border: 1px solid purple;
+  height: 230px;
+  width: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.koro--screen{
+  border: 20ppx solid orange;
+  height: 80%;
+  width: 100%;
+  max-width: 50%;
+  display: grid;
+  place-content: center;
+  gap: 10%;
+  position: relative;
+}
+
+.koro--screen img{
+  min-width: 80px;
+}
+
+.koro--actions{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  border: 1px solid;
+  text-align: center;
+}
+
+.actions-element{
+  padding: 0 4.5%;
+}
+
+.actions-element:hover{
+  background-color:#222;
+  color: aliceblue;
+}
+
+.koro--commands{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 10%; 
+  height: 100%;
+  gap: 5%;
+}
+
+.koro--commands i{
+  font-size: 30px;
+}
