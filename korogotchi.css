@@ -1,17 +1,23 @@
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+
 *{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-size: 20px;
+  font-family: 'Orbitron';
 }
 
-body {
 
+body {
+  height: 100vh;
 }
 
 header{
-  border: 1px solid red;
-  height: 20%;
+  background-image: url("https://img.freepik.com/fotos-gratis/fundo-de-tecnologia-do-circuito-da-placa-mae-em-gradiente-azul_53876-124654.jpg?w=1060&t=st=1677521794~exp=1677522394~hmac=d92393a0c97360cc0c0366dec581c53981e8a31028b9ec12f601b69621fe6954");
   width: 100%;
+  height: 100px;
   display: grid;
   place-content: center;
 }
@@ -22,12 +28,12 @@ header{
 }
 
 main{
-  border: 4px solid green;
-  height: 100vh;
+  margin-top: 5%;
+  padding: 10%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap:wrap-reverse;
 }
 
 .koro--status{
@@ -40,8 +46,6 @@ main{
 .koro--status ul{
   text-align:start;
   font-size: 24px;
-  display: grid;
-  place-content: center;
   list-style: none;
   width: 100%;
 }
@@ -51,20 +55,34 @@ main{
   margin-bottom: 15%;
 }
 
+.koro--status-- span{
+    height: 25px;
+    width: 100px;
+    padding: 0;
+    background-image: linear-gradient(to right, orange, red);
+}
+
 .koro--vice{
-  border: 1px solid purple;
-  height: 230px;
+  background-image: url("https://img.freepik.com/fotos-gratis/fundo-de-tecnologia-do-circuito-da-placa-mae-em-gradiente-azul_53876-124654.jpg?w=1060&t=st=1677521794~exp=1677522394~hmac=d92393a0c97360cc0c0366dec581c53981e8a31028b9ec12f601b69621fe6954");
+  height: 300px;
   width: 450px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border: 8px solid rgb(234, 234, 0);
+  border-radius: 10px;
 }
 
 .koro--screen{
-  border: 20ppx solid orange;
+  background-image: url(img/t-child.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  border: 8px solid rgb(234, 234, 0);
+  border-radius: 8px;
   height: 80%;
   width: 100%;
-  max-width: 50%;
+  max-width: 60%;
   display: grid;
   place-content: center;
   gap: 10%;
@@ -76,6 +94,7 @@ main{
 }
 
 .koro--actions{
+  background-image: url(https://img.freepik.com/fotos-gratis/fundo-de-tecnologia-do-circuito-da-placa-mae-em-gradiente-azul_53876-124654.jpg?w=1060&t=st=1677521794~exp=1677522394~hmac=d92393a0c97360cc0c0366dec581c53981e8a31028b9ec12f601b69621fe6954);
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -84,7 +103,7 @@ main{
 }
 
 .actions-element{
-  padding: 0 4.5%;
+  padding: 0 3%;
 }
 
 .actions-element:hover{
@@ -103,4 +122,21 @@ main{
 
 .koro--commands i{
   font-size: 30px;
+}
+
+@media screen and (max-width: 650px){
+
+
+  .koro--vice{
+    margin-top: 7%;
+  }
+
+  .koro--status{
+    margin-top: 20%;
+    width: 100%;
+  }
+  .koro--status ul{
+    display: flex;
+    justify-content: space-around;
+  }
 }
