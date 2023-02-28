@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="korogotchi.css" />
+    <link rel="stylesheet" href="./css/korogotchi.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -26,44 +26,49 @@
           <ul>
             <div class="koro--status--">
               <li>Hungry</li>
-              <span>-----------------</span>
+              <span class="status--meter"> | 1 | 2 | 3 | 4 | 5 </span>
               <li>Happines</li>
-              <span>-----------------</span>
+              <span class="status--meter">-----------------</span>
               <li>Tired</li>
-              <span>-----------------</span>
+              <span class="status--meter">-----------------</span>
             </div>
             <div class="koro--status--">
               <li>Strength</li>
-              <span>-----------------</span>
+              <span class="status--meter">-----------------</span>
               <li>Intelligence</li>
-              <span>-----------------</span>
+              <span class="status--meter">-----------------</span>
               <li>Loyalty</li>
-              <span>-----------------</span>
+              <span class="status--meter">-----------------</span>
             </div>
           </ul>
         </div>
 
         <div class="koro--vice">
           <div class="koro--screen">
+
+            <div class="koro--cycle">
+             11:30
+            </div>
+
               <div class="koro--actions">
                 <i class="fa-solid fa-bowl-food actions-element"></i>
                 <i class="fa-brands fa-gratipay actions-element"></i>
-                <i class="fa-solid fa-moon actions-element"></i>
+                <i class="fa-solid fa-moon actions-element" onclick="sleep(enter())"></i>
                 <i class="fa-solid fa-dumbbell actions-element"></i>
                 <i class="fa-solid fa-book-open actions-element"></i>
               </div>
             </div>
             
             <div class="koro--commands">
-              <button class="commad--left">
+              <button class="commad--left" onclick="goLeft()">
                 <i class="fa-solid fa-caret-left"></i>
               </button>
               
-              <button class="command--enter">
+              <button class="command--enter" onclick="enter()"> 
                 <i class="fa-solid fa-square"></i>
               </button>
               
-              <button class="command--right">
+              <button class="command--right" onclick="goRight()">
                 <i class="fa-solid fa-caret-right"></i>
               </button>
             </div>
@@ -73,3 +78,5 @@
     </section>
   </body>
 </html>
+
+<script src="./js/app.js"></script>

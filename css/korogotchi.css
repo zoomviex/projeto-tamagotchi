@@ -17,7 +17,7 @@ body {
 header{
   background-image: url("https://img.freepik.com/fotos-gratis/fundo-de-tecnologia-do-circuito-da-placa-mae-em-gradiente-azul_53876-124654.jpg?w=1060&t=st=1677521794~exp=1677522394~hmac=d92393a0c97360cc0c0366dec581c53981e8a31028b9ec12f601b69621fe6954");
   width: 100%;
-  height: 100px;
+  height: 120px;
   display: grid;
   place-content: center;
 }
@@ -32,12 +32,12 @@ main{
   padding: 10%;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-end;
   flex-wrap:wrap-reverse;
+  
 }
 
 .koro--status{
-  height: 60%;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -48,18 +48,15 @@ main{
   font-size: 24px;
   list-style: none;
   width: 100%;
+  
 }
 
-.koro--status span{
+.status--meter{
   border: solid 1px black;
-  margin-bottom: 15%;
-}
-
-.koro--status-- span{
-    height: 25px;
-    width: 100px;
-    padding: 0;
-    background-image: linear-gradient(to right, orange, red);
+  width: 150px;
+  height: 25px;
+  background-image: linear-gradient(to right, #0151e6,#0867d9, #02bcf5);
+  text-align: center;
 }
 
 .koro--vice{
@@ -74,7 +71,7 @@ main{
 }
 
 .koro--screen{
-  background-image: url(img/t-child.gif);
+  background-image: url(../img/t-child.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
@@ -94,12 +91,24 @@ main{
 }
 
 .koro--actions{
-  background-image: url(https://img.freepik.com/fotos-gratis/fundo-de-tecnologia-do-circuito-da-placa-mae-em-gradiente-azul_53876-124654.jpg?w=1060&t=st=1677521794~exp=1677522394~hmac=d92393a0c97360cc0c0366dec581c53981e8a31028b9ec12f601b69621fe6954);
+  background-color: #eeeeeed3;
   position: absolute;
   width: 100%;
   bottom: 0;
   border: 1px solid;
+  border-radius: 4px;
   text-align: center;
+}
+
+.koro--cycle{
+  background-color: #eeeeeed3;
+  position: absolute;
+  width: 16%;
+  font-size: 14px;
+  font-weight: 700;
+  top: 0;
+  border: 1px solid;
+  text-align: start;
 }
 
 .actions-element{
@@ -124,13 +133,13 @@ main{
   font-size: 30px;
 }
 
-@media screen and (max-width: 650px){
-
-
+@media screen and (max-width: 750px){
+  
+  
   .koro--vice{
     margin-top: 7%;
   }
-
+  
   .koro--status{
     margin-top: 20%;
     width: 100%;
@@ -140,3 +149,4 @@ main{
     justify-content: space-around;
   }
 }
+/* background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pu2344531-image-kwvy7nwm.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=df9d83805bc89e963041e7c2e1dd09f1"); */
