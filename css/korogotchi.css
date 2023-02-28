@@ -33,12 +33,12 @@ header{
 
 main{
   margin-top: 5%;
-  padding: 10%;
+  padding: 0 10%;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
   flex-wrap:wrap-reverse;
-  
+
 }
 
 .koro--status{
@@ -108,7 +108,6 @@ main{
 .koro--cycle{
   background-color: #eeeeeed3;
   position: absolute;
-  width: 16%;
   font-size: 14px;
   font-weight: 700;
   top: 0;
